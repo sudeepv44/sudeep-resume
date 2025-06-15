@@ -2,6 +2,7 @@ services:
   - type: web
     name: sudeep-springboot-app
     env: java
+    runtime: java17  # या java17, आपके Java वर्शन के आधार पर
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
     envVars:
