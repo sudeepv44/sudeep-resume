@@ -3,6 +3,10 @@ services:
     name: portfolio-with-spring-master
     env: docker
     plan: free
+<<<<<<< HEAD
+=======
+    buildCommand: ./mvnw clean install
+>>>>>>> 1da0887482ee098682d5d034542fb993042a9130
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production
