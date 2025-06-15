@@ -1,10 +1,10 @@
-# services:
-#   - type: web
-#     name: sudeep-springboot-app
-#     env: java
-#     runtime: java17           # Java runtime explicitly set
-#     buildCommand: ./mvnw clean install
-#     startCommand: java -jar target/*.jar
-#     envVars:
-#       - key: SPRING_PROFILES_ACTIVE
-#         value: production
+ services:
+   - type: web
+     name: sudeep-springboot-app
+     env: java
+    runtime: java17           # Java runtime explicitly set
+     buildCommand: ./mvnw clean install
+     startCommand: java -jar target/*.jar
+     envVars:
+       - key: SPRING_PROFILES_ACTIVE
+        value: production
