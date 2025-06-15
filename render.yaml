@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: sudeep-springboot-app
+    name: portfolio-with-spring-master
     env: java
-    runtime: java17           # Java runtime explicitly set
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
     envVars:
